@@ -1,26 +1,465 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lucid-portfolio-calendar-book</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio showcasing projects, skills, and expertise">
+  <meta name="keywords" content="portfolio, web development, projects, skills">
+  <meta name="author" content="Your Name">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="#home">YN</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#booking" class="btn-small">Book a Meeting</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-    <meta property="og:title" content="lucid-portfolio-calendar-book" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+          <h2>Web Developer & Designer</h2>
+          <p>I create beautiful, responsive websites that deliver exceptional user experiences. With a focus on clean code and intuitive design, I help businesses establish a strong online presence.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <!-- Replace with your image -->
+            <div class="placeholder-image"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Here are some of my recent works</p>
+        
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Project 1">
+            </div>
+            <div class="project-details">
+              <h3>E-Commerce Website</h3>
+              <p>A responsive e-commerce platform built with HTML, CSS, and JavaScript. Features include product filtering, cart functionality, and user authentication.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Project 2">
+            </div>
+            <div class="project-details">
+              <h3>Portfolio Template</h3>
+              <p>A customizable portfolio template for creative professionals. Features a minimal design with smooth scrolling and responsive layout.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Project 3">
+            </div>
+            <div class="project-details">
+              <h3>Weather Application</h3>
+              <p>A weather application that provides real-time weather data based on location. Features a clean UI with animated weather icons.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+        
+        <div class="skills-container">
+          <div class="skills-category">
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-icon">HTML5</div>
+                <div class="skill-name">HTML5</div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">CSS3</div>
+                <div class="skill-name">CSS3</div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">JS</div>
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">RWD</div>
+                <div class="skill-name">Responsive Design</div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 92%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">API</div>
+                <div class="skill-name">API Integration</div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">GIT</div>
+                <div class="skill-name">Git & GitHub</div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 88%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skills-category">
+            <h3>Soft Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-icon">🤝</div>
+                <div class="skill-name">Communication</div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 92%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">🔍</div>
+                <div class="skill-name">Problem Solving</div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 88%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">⏱️</div>
+                <div class="skill-name">Time Management</div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">👥</div>
+                <div class="skill-name">Teamwork</div>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 90%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+        <p class="section-subtitle">What people say about my work</p>
+        
+        <div class="testimonial-slider">
+          <div class="testimonial-track">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"Working with this developer was an absolute pleasure. They delivered a beautiful website that perfectly captured our brand's essence. Their attention to detail and technical expertise are outstanding."</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <!-- Placeholder for avatar -->
+                  <div class="avatar-placeholder"></div>
+                </div>
+                <div class="author-info">
+                  <h4>Sarah Johnson</h4>
+                  <p>CEO, Design Studio</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"I've worked with many developers over the years, but few have the combination of technical skill and creative vision that this developer possesses. They transformed our outdated website into a modern, user-friendly platform."</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <!-- Placeholder for avatar -->
+                  <div class="avatar-placeholder"></div>
+                </div>
+                <div class="author-info">
+                  <h4>Michael Chen</h4>
+                  <p>Marketing Director, Tech Solutions</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"The website this developer created for my small business has significantly increased our online leads. The clean design and intuitive navigation have received countless compliments from our customers."</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <!-- Placeholder for avatar -->
+                  <div class="avatar-placeholder"></div>
+                </div>
+                <div class="author-info">
+                  <h4>Emily Rodriguez</h4>
+                  <p>Owner, Boutique Shop</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-controls">
+            <button class="control-prev" aria-label="Previous testimonial">←</button>
+            <div class="testimonial-indicators">
+              <span class="indicator active"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+            </div>
+            <button class="control-next" aria-label="Next testimonial">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind? Let's talk about it.</p>
+        
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="info-item">
+              <h3>Contact Information</h3>
+              <p>Feel free to reach out if you have any questions or want to discuss a potential project.</p>
+              <ul>
+                <li>
+                  <span class="info-icon">📧</span>
+                  <span class="info-text">hello@yourname.com</span>
+                </li>
+                <li>
+                  <span class="info-icon">📱</span>
+                  <span class="info-text">+1 (123) 456-7890</span>
+                </li>
+                <li>
+                  <span class="info-icon">📍</span>
+                  <span class="info-text">San Francisco, CA</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="social-links">
+              <a href="#" aria-label="GitHub profile" class="social-link">GitHub</a>
+              <a href="#" aria-label="LinkedIn profile" class="social-link">LinkedIn</a>
+              <a href="#" aria-label="Twitter profile" class="social-link">Twitter</a>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-submit">Send Message</button>
+              <div id="formStatus" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+      <div class="container">
+        <h2 class="section-title">Book a Meeting</h2>
+        <p class="section-subtitle">Schedule a time to discuss your project</p>
+        
+        <div class="booking-container">
+          <div class="booking-info">
+            <h3>Let's Discuss Your Project</h3>
+            <p>Book a 30-minute consultation to discuss your project requirements, timeline, and budget. I'll help you determine the best approach to achieve your goals.</p>
+            <ul class="booking-benefits">
+              <li>Personalized project assessment</li>
+              <li>Technology recommendations</li>
+              <li>Timeline and budget planning</li>
+              <li>Clear next steps and approach</li>
+            </ul>
+          </div>
+          
+          <div class="booking-calendar">
+            <div class="calendar-container">
+              <div class="calendar-header">
+                <button id="prevMonth" aria-label="Previous month">←</button>
+                <h3 id="currentMonth">April 2025</h3>
+                <button id="nextMonth" aria-label="Next month">→</button>
+              </div>
+              
+              <div class="calendar-grid" id="calendarGrid">
+                <!-- Calendar will be generated by JavaScript -->
+              </div>
+              
+              <div class="time-slots" id="timeSlots">
+                <h4>Select a time on <span id="selectedDate">April 16, 2025</span></h4>
+                <div class="slots-container" id="slotsContainer">
+                  <!-- Time slots will be generated by JavaScript -->
+                </div>
+              </div>
+              
+              <div class="booking-form" id="bookingForm">
+                <h4>Complete your booking</h4>
+                <form id="meetingForm">
+                  <div class="form-group">
+                    <label for="bookingName">Name</label>
+                    <input type="text" id="bookingName" name="bookingName" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="bookingEmail">Email</label>
+                    <input type="email" id="bookingEmail" name="bookingEmail" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="bookingTopic">Meeting Topic</label>
+                    <input type="text" id="bookingTopic" name="bookingTopic" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="bookingNotes">Additional Notes</label>
+                    <textarea id="bookingNotes" name="bookingNotes" rows="3"></textarea>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-submit">Confirm Booking</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#home">Your Name</a>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+          <a href="#booking">Book a Meeting</a>
+        </div>
+        
+        <div class="footer-social">
+          <a href="#" aria-label="GitHub profile">GitHub</a>
+          <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+          <a href="#" aria-label="Twitter profile">Twitter</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
 </html>
