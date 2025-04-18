@@ -298,10 +298,17 @@ nav {
 }
 
 .placeholder-image {
+  object-fit: cover;
+  display: block; 
   width: 100%;
   height: 100%;
   background-color: var(--primary-color);
   background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  transition: transform 0.4s ease;
+}
+
+.image-container:hover .placeholder-image {
+  transform: scale(1.1);
 }
 
 /* 
@@ -956,7 +963,7 @@ footer {
   }
 
   .image-container {
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .skills-container,
@@ -1047,4 +1054,9 @@ footer {
   .slots-container {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
   }
+}
+
+.logo {
+
+  width: 50px;
 }
